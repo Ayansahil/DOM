@@ -2,17 +2,17 @@ let post = document.querySelector(".post-image img");
 let heart = document.querySelector(".post-image i");
 let action = document.querySelector(".action-buttons i");
 
-
 post.addEventListener("dblclick", function () {
   heart.style.opacity = "1";
-  heart.style.transform = "translate(-50%, -50%) scale(1) rotate(-10deg)  ";
+  heart.style.transform = "translate(-50%, -50%) scale(1) ";
+
   action.classList.add("ri-heart-3-fill");
   action.classList.remove("ri-heart-3-line");
   action.style.color = "red";
 
   setTimeout(function () {
     heart.style.opacity = "0";
-    heart.style.transform = "translate(-50%, -50%) scale(0)  rotate(-20deg) ";
+    heart.style.transform = "translate(-50%, -50%) scale(0)  rotate(-20deg)";
   }, 1000);
 });
 
