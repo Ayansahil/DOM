@@ -28,7 +28,7 @@ main {
   border: 1px solid rgb(52, 51, 51);
   display: flex;
   justify-content: center;
-  align-items:flex-end ; 
+  align-items: flex-end;
   font-family: system-ui;
   font-size: 16px;
   cursor: pointer;
@@ -46,7 +46,7 @@ main {
     rgba(245, 245, 245, 1) 100%
   );
   z-index: 1;
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 
 .key.black {
@@ -68,7 +68,7 @@ main {
   z-index: 2;
   margin-right: -20px;
   margin-left: -20px;
-  padding-bottom: 8px; 
+  padding-bottom: 8px;
 }
 
 .key.black:active {
@@ -77,6 +77,16 @@ main {
 .key.white:active {
   background: #ddd;
 }
+.key.black.active {
+  background: #555 !important;
+  transform: translateY(2px);
+}
+
+.key.white.active {
+  background: #999 !important;
+  transform: translateY(2px);
+}
+
 .key span {
   margin-bottom: 10px;
 }
@@ -102,4 +112,3 @@ main {
     margin-left: -15px;
   }
 }
-
